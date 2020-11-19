@@ -1,0 +1,20 @@
+<template>
+    <lightning-card class="slds-align_absolute-center" >
+        <lightning-button variant="brand" 
+        label= {clickedButton}
+        title= {clickedButtonTitle} 
+        onclick={handleClick} 
+        class="slds-m-middle_x-large">
+        </lightning-button>
+        
+                <template if:true ={showTomBoolean}>
+                   <img src={TomImageResource}>
+                </template>
+            
+                <template if:false ={showTomBoolean}>
+                    <img src={JerryImageResource}>
+                </template>
+
+    </lightning-card>
+        
+</template>
